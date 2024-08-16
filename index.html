@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Branch Information</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/7c992a4c91.js" crossorigin="anonymous"></script>
+    <script src="javascript.js" defer></script>
+</head>
+<body>
+    <div class="navbar">
+        <i class="fas fa-home" onclick="showSection('home')"></i>
+        <i class="fas fa-file" onclick="showSection('cs')"></i>
+        <i class="fas fa-envelope" onclick="showSection('ec')"></i>
+        <i class="fas fa-circle-info" onclick="showSection('civil')"></i>
+        <i class="fas fa-circle-info" onclick="showSection('mechanical')"></i>
+        <i class="fas fa-circle-info" onclick="showSection('eee')"></i>
+        <i class="fas fa-circle-info" onclick="showSection('maths')"></i>
+        <button onclick="changeDarkMode()"><i class="fas fa-circle-half-stroke last-icon"></i></button>
+    </div>
+    
+
+    <div class="heading">
+        <h1>Avaramun VTU Welcome</h1>
+    </div>
+
+    <div id="content">
+        <!-- Home Section -->
+        <section id="home" class="content-section"  style="display: none;">
+            <div class="boxes-container">
+                <div onclick="showSection('cs');" class="box">CS</div>
+                <div onclick="showSection('ec');" class="box">EC</div>
+                <div onclick="showSection('civil');" class="box">Civil</div>
+                <div onclick="showSection('mechanical');" class="box">Mechanical</div>
+                <div onclick="showSection('eee');" class="box">EEE</div>
+                <div onclick="showSection('maths');" class="box">Maths</div>
+            </div>
+        </section>
+
+
+        <!-- Computer Science Section -->
+        <section id="cs" class="content-section" style="display: none;">
+            <button class="back-button" onclick="showSection('home')">Back</button>
+            <div class="boxes-container">
+                <div onclick="showSection('cs5');" class="box">5th Sem</div>
+                <div onclick="showSection('cs6');" class="box">6th Sem</div>
+                <div onclick="showSection('cs7');" class="box">7th Sem</div>
+                <div onclick="showSection('cs8');" class="box">8th Sem</div>
+            </div>
+        </section>
+
+        <!-- CS 5th Semester -->
+        <section id="cs5" class="content-section" style="display: none;">
+            <button class="back-button" onclick="showSection('cs')">Back</button>
+            <div class="boxes-container">
+                <div onclick="showSection('cs5-notes');" class="box">Notes</div>
+                <div onclick="showSection('cs5-question-bank');" class="box">Question Bank</div>
+            </div>
+        </section>
+
+        <!-- CS 6th Semester -->
+        <section id="cs6" class="content-section" style="display: none;">
+            <button class="back-button" onclick="showSection('cs')">Back</button>
+            <div class="boxes-container">
+                <div onclick="showSection('cs6-notes');" class="box">Notes</div>
+                <div onclick="showSection('cs6-question-bank');" class="box">Question Bank</div>
+            </div>
+        </section>
+
+        <!-- CS 7th Semester -->
+        <section id="cs7" class="content-section" style="display: none;">
+            <button class="back-button" onclick="showSection('cs')">Back</button>
+            <div class="boxes-container">
+                <div onclick="showSection('cs7-notes');" class="box">Notes</div>
+                <div onclick="showSection('cs7-question-bank');" class="box">Question Bank</div>
+            </div>
+        </section>
+
+        <!-- CS 8th Semester -->
+        <section id="cs8" class="content-section" style="display: none;">
+            <button class="back-button" onclick="showSection('cs')">Back</button>
+            <div class="boxes-container">
+                <div onclick="showSection('cs8-notes');" class="box">Notes</div>
+                <div onclick="showSection('cs8-question-bank');" class="box">Question Bank</div>
+            </div>
+        </section>
+
+        <!-- Electronics Section -->
+        <section id="ec" class="content-section" style="display: none;">
+            <button class="back-button" onclick="showSection('home')">Back</button>
+            <div class="boxes-container">
+                <div onclick="showSection('ec5');" class="box">5th Sem</div>
+                <div onclick="showSection('ec6');" class="box">6th Sem</div>
+                <div onclick="showSection('ec7');" class="box">7th Sem</div>
+                <div onclick="showSection('ec8');" class="box">8th Sem</div>
+            </div>
+        </section>
+
+        <!-- EC 5th Semester -->
+        <section id="ec5" class="content-section" style="display: none;">
+            <button class="back-button" onclick="showSection('ec')">Back</button>
+            <div class="boxes-container">
+                <div onclick="showSection('ec5-notes');" class="box">Notes</div>
+                <div onclick="showSection('ec5-question-bank');" class="box">Question Bank</div>
+            </div>
+        </section>
+
+        <!-- EC 6th Semester -->
+        <section id="ec6" class="content-section" style="display: none;">
+            <button class="back-button" onclick="showSection('ec')">Back</button>
+            <div class="boxes-container">
+                <div onclick="showSection('ec6-notes');" class="box">Notes</div>
+                <div onclick="showSection('ec6-question-bank');" class="box">Question Bank</div>
+            </div>
+        </section>
+
+        <!-- EC 7th Semester -->
+        <section id="ec7" class="content-section" style="display: none;">
+            <button class="back-button" onclick="showSection('ec')">Back</button>
+            <div class="boxes-container">
+                <div onclick="showSection('ec7-notes');" class="box">Notes</div>
+                <div onclick="showSection('ec7-question-bank');" class="box">Question Bank</div>
+            </div>
+        </section>
+
+        <!-- EC 8th Semester -->
+        <section id="ec8" class="content-section" style="display: none;">
+            <button class="back-button" onclick="showSection('ec')">Back</button>
+            <div class="boxes-container">
+                <div onclick="showSection('ec8-notes');" class="box">Notes</div>
+                <div onclick="showSection('ec8-question-bank');" class="box">Question Bank</div>
+            </div>
+        </section>
+
+        
+        <!-- Civil Engineering Section -->
+        <section id="civil" class="content-section" style="display: none;">
+            <button class="back-button" onclick="showSection('home')">Back</button>
+            <div class="boxes-container">
+                <div onclick="showSection('civil5');" class="box">5th Sem</div>
+                <div onclick="showSection('civil6');" class="box">6th Sem</div>
+                <div onclick="showSection('civil7');" class="box">7th Sem</div>
+                <div onclick="showSection('civil8');" class="box">8th Sem</div>
+            </div>
+        </section>
+       
+
+        <!-- Civil 5th Semester -->
+        <section id="civil5" class="content-section" style="display: none;">
+            <button class="back-button" onclick="showSection('civil')">Back</button>
+            <div class="boxes-container">
+                <div onclick="showSection('civil5-notes');" class="box">Notes</div>
+                <div onclick="showSection('civil5-question-bank');" class="box">Question Bank</div>
+            </div>
+        </section>
+
+        <!-- Civil 6th Semester -->
+        <section id="civil6" class="content-section" style="display: none;">
+            <button class="back-button" onclick="showSection('civil')">Back</button>
+            <div class="boxes-container">
+                <div onclick="showSection('civil6-notes');" class="box">Notes</div>
+                <div onclick="showSection('civil6-question-bank');" class="box">Question Bank</div>
+            </div>
+        </section>
+
+        <!-- Civil 7th Semester -->
+        <section id="civil7" class="content-section" style="display: none;">
+            <button class="back-button" onclick="showSection('civil')">Back</button>
+            <div class="boxes-container">
+                <div onclick="showSection('civil7-notes');" class="box">Notes</div>
+                <div onclick="showSection('civil7-question-bank');" class="box">Question Bank</div>
+            </div>
+        </section>
+
+        <!-- Civil 8th Semester -->
+        <section id="civil8" class="content-section" style="display: none;">
+            <button class="back-button" onclick="showSection('civil')">Back</button>
+            <div class="boxes-container">
+                <div onclick="showSection('civil8-notes');" class="box">Notes</div>
+                <div onclick="showSection('civil8-question-bank');" class="box">Question Bank</div>
+            </div>
+        </section>
+
+        <!-- Mechanical Engineering Section -->
+        <section id="mechanical" class="content-section" style="display: none;">
+            <button class="back-button" onclick="showSection('home')">Back</button>
+            <div class="boxes-container">
+                <div onclick="showSection('mechanical5');" class="box">5th Sem</div>
+                <div onclick="showSection('mechanical6');" class="box">6th Sem</div>
+                <div onclick="showSection('mechanical7');" class="box">7th Sem</div>
+                <div onclick="showSection('mechanical8');" class="box">8th Sem</div>
+            </div>
+        </section>
+
+        <!-- Mechanical 5th Semester -->
+        <section id="mechanical5" class="content-section" style="display: none;">
+            <button class="back-button" onclick="showSection('mechanical')">Back</button>
+            <div class="boxes-container">
+                <div onclick="showSection('mechanical5-notes');" class="box">Notes</div>
+                <div onclick="showSection('mechanical5-question-bank');" class="box">Question Bank</div>
+            </div>
+        </section>
+
+        <!-- Mechanical 6th Semester -->
+        <section id="mechanical6" class="content-section" style="display: none;">
+            <button class="back-button" onclick="showSection('mechanical')">Back</button>
+            <div class="boxes-container">
+                <div onclick="showSection('mechanical6-notes');" class="box">Notes</div>
+                <div onclick="showSection('mechanical6-question-bank');" class="box">Question Bank</div>
+            </div>
+        </section>
+
+        <!-- Mechanical 7th Semester -->
+        <section id="mechanical7" class="content-section" style="display: none;">
+            <button class="back-button" onclick="showSection('mechanical')">Back</button>
+            <div class="boxes-container">
+                <div onclick="showSection('mechanical7-notes');" class="box">Notes</div>
+                <div onclick="showSection('mechanical7-question-bank');" class="box">Question Bank</div>
+            </div>
+        </section>
+
+        <!-- Mechanical 8th Semester -->
+        <section id="mechanical8" class="content-section" style="display: none;">
+            <button class="back-button" onclick="showSection('mechanical')">Back</button>
+            <div class="boxes-container">
+                <div onclick="showSection('mechanical8-notes');" class="box">Notes</div>
+                <div onclick="showSection('mechanical8-question-bank');" class="box">Question Bank</div>
+            </div>
+        </section>
+
+        <!-- Electrical & Electronics Engineering Section -->
+        <section id="eee" class="content-section" style="display: none;">
+            <button class="back-button" onclick="showSection('home')">Back</button>
+            <div class="boxes-container">
+                <div onclick="showSection('eee5');" class="box">5th Sem</div>
+                <div onclick="showSection('eee6');" class="box">6th Sem</div>
+                <div onclick="showSection('eee7');" class="box">7th Sem</div>
+                <div onclick="showSection('eee8');" class="box">8th Sem</div>
+            </div>
+        </section>
+
+        <!-- EEE 5th Semester -->
+        <section id="eee5" class="content-section" style="display: none;">
+            <button class="back-button" onclick="showSection('eee')">Back</button>
+            <div class="boxes-container">
+                <div onclick="showSection('eee5-notes');" class="box">Notes</div>
+                <div onclick="showSection('eee5-question-bank');" class="box">Question Bank</div>
+            </div>
+        </section>
+
+        <!-- EEE 6th Semester -->
+        <section id="eee6" class="content-section" style="display: none;">
+            <button class="back-button" onclick="showSection('eee')">Back</button>
+            <div class="boxes-container">
+                <div onclick="showSection('eee6-notes');" class="box">Notes</div>
+                <div onclick="showSection('eee6-question-bank');" class="box">Question Bank</div>
+            </div>
+        </section>
+
+        <!-- EEE 7th Semester -->
+        <section id="eee7" class="content-section" style="display: none;">
+            <button class="back-button" onclick="showSection('eee')">Back</button>
+            <div class="boxes-container">
+                <div onclick="showSection('eee7-notes');" class="box">Notes</div>
+                <div onclick="showSection('eee7-question-bank');" class="box">Question Bank</div>
+            </div>
+        </section>
+
+        <!-- EEE 8th Semester -->
+        <section id="eee8" class="content-section" style="display: none;">
+            <button class="back-button" onclick="showSection('eee')">Back</button>
+            <div class="boxes-container">
+                <div onclick="showSection('eee8-notes');" class="box">Notes</div>
+                <div onclick="showSection('eee8-question-bank');" class="box">Question Bank</div>
+            </div>
+        </section>
+
+        <!-- Mathematics Section -->
+        <section id="maths" class="content-section" style="display: none;">
+            <button class="back-button" onclick="showSection('home')">Back</button>
+            <div class="boxes-container">
+                <div onclick="showSection('maths5');" class="box">5th Sem</div>
+                <div onclick="showSection('maths6');" class="box">6th Sem</div>
+                <div onclick="showSection('maths7');" class="box">7th Sem</div>
+                <div onclick="showSection('maths8');" class="box">8th Sem</div>
+            </div>
+        </section>
+
+        <!-- Maths 5th Semester -->
+        <section id="maths5" class="content-section" style="display: none;">
+            <button class="back-button" onclick="showSection('maths')">Back</button>
+            <div class="boxes-container">
+                <div onclick="showSection('maths5-notes');" class="box">Notes</div>
+                <div onclick="showSection('maths5-question-bank');" class="box">Question Bank</div>
+            </div>
+        </section>
+
+        <!-- Maths 6th Semester -->
+        <section id="maths6" class="content-section" style="display: none;">
+            <button class="back-button" onclick="showSection('maths')">Back</button>
+            <div class="boxes-container">
+                <div onclick="showSection('maths6-notes');" class="box">Notes</div>
+                <div onclick="showSection('maths6-question-bank');" class="box">Question Bank</div>
+            </div>
+        </section>
+
+        <!-- Maths 7th Semester -->
+        <section id="maths7" class="content-section" style="display: none;">
+            <button class="back-button" onclick="showSection('maths')">Back</button>
+            <div class="boxes-container">
+                <div onclick="showSection('maths7-notes');" class="box">Notes</div>
+                <div onclick="showSection('maths7-question-bank');" class="box">Question Bank</div>
+            </div>
+        </section>
+
+        <!-- Maths 8th Semester -->
+        <section id="maths8" class="content-section" style="display: none;">
+            <button class="back-button" onclick="showSection('maths')">Back</button>
+            <div class="boxes-container">
+                <div onclick="showSection('maths8-notes');" class="box">Notes</div>
+                <div onclick="showSection('maths8-question-bank');" class="box">Question Bank</div>
+            </div>
+        </section>
+    </div>
+</body>
+</html>

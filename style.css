@@ -1,0 +1,230 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html, body {
+    height: 100%;
+    margin: 0;
+    overflow-x: hidden; /* Prevent horizontal scrolling */
+    overflow-y: auto; /* Enable vertical scrolling */
+}
+
+:root {
+    --background-color: #2D3250;
+    --background-colors: rgb(68, 108, 107);
+    --background-light: #424769;
+    --grey-color: #7077A1;
+    --peach-color: #F6B17A;
+}
+
+/* Base styles for heading */
+.heading {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #4A4A4A;
+    padding: 20px 1%;
+    width: 100%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    text-align: center;
+}
+
+.heading h1 {
+    font-family: 'Roboto', sans-serif;
+    font-size: 3rem;
+    padding-left: 10%;
+    color: #F6B17A;
+    margin: 0;
+    animation: fadeIn 2s ease-in-out;
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+    .heading {
+        padding: 15px 2%;
+    }
+
+    .heading h1 {
+        font-size: 2.0rem;
+    }
+
+    .content-section {
+        padding-left: 1vh;
+        width: calc(100vw - 6vh);
+    }
+}
+
+@media (max-width: 480px) {
+    .heading {
+        padding: 10px 3%;
+    }
+
+    .heading h1 {
+        font-size: 2rem;
+    }
+
+    .content-section {
+        padding-left: 6vh;
+        width: calc(100vw - 5vh);
+    }
+}
+
+/* Animation for the heading */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Navbar styling */
+.navbar {
+    position: fixed;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2vh;
+    background-color: var(--background-color);
+    width: 8vh;
+    height: 100%;
+    padding-top: 13%;
+    transition: width 0.3s ease;
+}
+
+.navbar i, .navbar button {
+    font-size: 5vh;
+    color: var(--grey-color);
+    margin: 1rem;
+    transition: all 0.4s ease-in-out;
+}
+
+.navbar i:hover, .navbar button:hover {
+    transform: translateY(-10px) scale(1.15);
+    color: var(--peach-color);
+}
+
+.navbar button {
+    background: transparent;
+    border: none;
+}
+
+/* Content section styling */
+.content-section {
+    background-color: var(--background-light);
+    height: 100vh;
+    width: calc(113vw - 8vh);
+    padding-left: 8vh;
+}
+
+/* Box styling within the sections */
+.boxes-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1rem;
+    padding: 2rem;
+    width: calc(100vw - 8vh);
+    margin: 10 auto;
+}
+
+.box {
+    background-color: #F6B17A;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    font-size: 1.5rem;
+    font-family: 'Roboto', sans-serif;
+    border-radius: 8px;
+    height: 150px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    cursor: pointer;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.box:hover {
+    transform: scale(1.1);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+    background-color: #F4A261;
+}
+
+/* Responsive styles for boxes */
+@media (max-width: 1024px) {
+    .boxes-container {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+@media (max-width: 768px) {
+    .boxes-container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 480px) {
+    .boxes-container {
+        grid-template-columns: 1fr;
+    }
+}
+
+/* Webkit browsers (Chrome, Safari, Edge) */
+::-webkit-scrollbar {
+    width: 12px;
+}
+
+::-webkit-scrollbar-track {
+    background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+    background: rgba(0, 0, 0, 0.5);
+    border-radius: 50%;
+    width: 8px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: rgba(0, 0, 0, 0.8);
+}
+
+/* Firefox */
+body {
+    scrollbar-width: thin;
+    scrollbar-color: rgba(0, 0, 0, 0.5) transparent;
+}
+
+/* Internet Explorer */
+body {
+    -ms-overflow-style: scrollbar;
+}
+
+
+/* Existing styles */
+
+.back-button {
+    background-color: var(--peach-color);
+    border: none;
+    color: white;
+    font-size: 1.5rem;
+    padding: 10px 20px;
+    border-radius: 8px;
+    cursor: pointer;
+    margin: 10px;
+    display: inline-block;
+    transition: background-color 0.3s ease;
+}
+
+.back-button:hover {
+    background-color: #F4A261;
+}
+
+/* Dark mode styling */
+.dark-mode {
+    background-color: #2D2D2D;
+    color: #F5F5F5;
+}
