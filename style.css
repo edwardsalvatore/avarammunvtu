@@ -165,7 +165,7 @@ html, body {
 
 /* Box styling within the sections */
 .boxes-container {
-    margin-top: 110;
+  
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 1rem;
