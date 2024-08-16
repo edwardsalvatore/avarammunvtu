@@ -24,7 +24,9 @@ function changeDarkMode() {
 function scrollToSection(sectionId) {
   const section = document.getElementById(sectionId);
 
-
+  if (section) {
+    section.scrollIntoView({ behavior: 'smooth' });
+  }
 }
 
 
@@ -48,6 +50,3 @@ function showSection(sectionId) {
     });
 }
 
-function changeDarkMode() {
-    document.body.classList.toggle('dark-mode');
-}
